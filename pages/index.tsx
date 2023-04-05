@@ -82,7 +82,7 @@ const Home = () => {
           </h1>
         </div>
 
-        <div className="grid grid-cols-2 space-x-5 ">
+        <div className="grid grid-cols-1 md:grid-cols-2  gap-4  items-center  ">
           <TextBox text={transcript} />
           {loading ? (
             <div className="flex justify-center items-center">
@@ -112,7 +112,7 @@ const Home = () => {
           )}
         </div>
         <div
-          className="flex  my-4 cursor-pointer ml-12 gap-4 items-center justify-center
+          className="flex mx-auto  my-4 cursor-pointer ml-4 gap-2 items-center justify-center
         "
         >
           {!listening ? (
@@ -128,7 +128,7 @@ const Home = () => {
             Reset Text
           </p>
           <div>
-            {transcript && (
+            {!transcript && (
               <p
                 className="font-semibold text-white bg-green-600 px-2 py-2 rounded-lg hover:bg-green-500 transition-all duration-150 ease-in-out"
                 onClick={sendMessage}
