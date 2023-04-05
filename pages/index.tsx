@@ -63,7 +63,7 @@ const Home = () => {
   return (
     <div className="">
       <Head>
-        <title>VOice API TEST</title>
+        <title>Voice GPT</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
